@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
+import Lista from './Lista';
 
 function App() {
 
@@ -11,22 +12,17 @@ function App() {
 
   const loadData = async () =>{
     const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    const data = await response.json()
-    setOggetto(data)
-    console.log(data)
+    const dati = await response.json()
+    setOggetto(dati)
+    console.log(dati)
   }
 
 
   return (
     <div className="App">
-      {oggetto.map((item)=>{
-        return (
-          <div key={item.id}>
-            <h1>{item.title}</h1>
-            <p>{item.body}</p>
-          </div>
-        )
-      })}
+  
+        <Lista oggetto={oggetto}/>
+    
     </div>
   );
 }
