@@ -26,3 +26,13 @@
 .carta{
   margin-top: 2rem;
 }
+
+.titolo{
+  color: yellow;
+  font-size: 3rem;
+}
+
+.title{
+  color: blue;
+  font-size: 5rem;
+}

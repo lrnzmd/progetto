@@ -48,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+    <h5 className='title'>COMPITO</h5>
       <input
         className='input'
         type="text"

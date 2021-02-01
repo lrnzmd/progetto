@@ -9,8 +9,8 @@ const Tour = ({ id, title, body}) => {
   return (
     <Card bg={'info'} className='carta'>
       <Card.Body className="single-tour">
-          <Card.Title className="titolo">
-            <h1>{title}</h1>
+          <Card.Title>
+            <h1 className="titolo">{title}</h1>
           </Card.Title>
           <Card.Text>
             <p>{body}</p>
