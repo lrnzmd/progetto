@@ -7,16 +7,13 @@ import {Card} from 'react-bootstrap';
 const Singolo = ({ id, title, body}) => {
 
   return (
-
-    <Card bg={'info'} className='carta' key={id}>
-      <Card.Body className="single-tour">
-
+    <Card bg={'info'} className='carta'>
+      <Card.Body className="single-tour" key={id}>
           <Card.Title>
             <h1 className="titolo">{title}</h1>
           </Card.Title>
           <Card.Text>
-            {body}
-
+           {body}
           </Card.Text>
       </Card.Body>
     </Card>
