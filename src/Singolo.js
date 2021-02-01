@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card} from 'react-bootstrap';
 
 
-const Tour = ({ id, title, body}) => {
+const Singolo = ({ id, title, body}) => {
 
   return (
     <Card bg={'info'} className='carta'>
@@ -20,4 +20,4 @@ const Tour = ({ id, title, body}) => {
   );
 };
 
-export default Tour;
+export default Singolo;
