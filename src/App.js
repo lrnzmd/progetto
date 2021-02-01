@@ -2,6 +2,8 @@ import React, { useState, useEffect} from 'react';
 import './App.css';
 import Lista from './Lista';
 
+
+
 function App() {
 
   const [lista, setLista] = useState([])
@@ -47,14 +49,13 @@ function App() {
   return (
     <div className="App">
       <input
+        className='input'
         type="text"
         placeholder="Search"
         value={searchTerm}
         onChange={(e)=> setSearchTerm(e.target.value)}
       />
-  
       <Lista oggetto={listafiltatta}/>
-    
     </div>
   );
 }
