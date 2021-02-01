@@ -58,10 +58,10 @@ function App() {
         value={searchTerm}
         onChange={(e)=> setSearchTerm(e.target.value)}
       />
-      <div class="row">
-          {listafiltatta.map((item) => {
+      <div className="row">
+          {listafiltatta.map((item, index) => {
             return (
-              <Col sm="4">
+              <Col sm="4" key={index}>
                  <Singolo {...item}/>
               </Col>
               )
