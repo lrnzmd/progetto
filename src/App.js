@@ -1,6 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
-import Lista from './Lista';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Col} from 'react-bootstrap';
+import Singolo from './Singolo'
 
 
 
@@ -56,7 +58,15 @@ function App() {
         value={searchTerm}
         onChange={(e)=> setSearchTerm(e.target.value)}
       />
-      <Lista oggetto={listafiltatta}/>
+      <div class="row">
+          {listafiltatta.map((item) => {
+            return (
+              <Col sm="4">
+                 <Singolo {...item}/>
+              </Col>
+              )
+          })}    
+      </div>
     </div>
   );
 }
