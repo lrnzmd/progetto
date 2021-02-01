@@ -13,7 +13,7 @@ const Tour = ({ id, title, body}) => {
             <h1 className="titolo">{title}</h1>
           </Card.Title>
           <Card.Text>
-            <p>{body}</p>
+           {body}
           </Card.Text>
       </Card.Body>
     </Card>
